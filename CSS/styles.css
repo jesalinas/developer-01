@@ -34,6 +34,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 30rem;
+    justify-items: center;
 }
 
 .logo {
@@ -55,11 +56,48 @@ body {
     font-weight: 30rem;
     margin-top: 0;
     margin-bottom: 3.2rem;
+    text-align: center;
 }
+
+.email-img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
+}
+
+.email-img img {
+    width: 8rem;
+}
+
+.resend {
+    font-size: var(--sm);
+}
+.resend span {
+    color: var(--very-light-pink);
+}
+
+.resend a {
+    color: var(--very-light-pink);
+    text-decoration: none;
+}
+
 
 .form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.form a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-decoration: none;
+    margin-bottom: 5rem;
 }
 
 .label {
@@ -77,6 +115,10 @@ body {
     margin-bottom: 1.2rem;
 }
 
+.input-email {
+    margin-bottom: 2.2rem;
+}
+
 .primary-button {
     background-color: var(--hospital-green);
     border-radius: .8rem;
@@ -89,6 +131,19 @@ body {
     height: 5rem;
 }
 
+.secondary-button {
+background-color: var(--white);
+border-radius: .8rem;
+border: .1rem solid var(--hospital-green);
+color: var(--hospital-green);
+width: 100%;
+cursor: pointer;
+font-size: var(--md);
+font-weight: bold;
+height: 5rem;
+
+}
+
 .login-button {
     margin-top: 1.4rem;
     margin-bottom: 3rem;
@@ -99,3 +154,4 @@ body {
         display: block;
     }
 }
+
