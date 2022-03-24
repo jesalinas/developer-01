@@ -46,9 +46,16 @@ body {
 
 .title {
     font-size: var(--lg);
-    margin-bottom: 1.2rem;
-    text-align: center;
+    margin-bottom: 3rem;
+    text-align:center;
 }
+
+.title__create {
+    font-size: var(--lg);
+    margin-bottom: 3rem;
+    text-align: start;
+}
+
 
 .subtitle {
     color: var(--very-light-pink);
@@ -115,7 +122,11 @@ body {
     margin-bottom: 1.2rem;
 }
 
-.input-email {
+.value {
+    color: var(--very-light-pink);
+}
+
+.input-email, .input-name, .input-password {
     margin-bottom: 2.2rem;
 }
 
@@ -153,5 +164,12 @@ height: 5rem;
     .logo {
         display: block;
     }
+    .secondary-button, .create__button {
+        width: 30rem;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 2.4rem;
+        }
+    
 }
 
